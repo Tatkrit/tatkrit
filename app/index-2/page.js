@@ -1,15 +1,15 @@
-
-import TextEffect from "@/components/elements/TextEffect"
-import Layout from '@/components/layout/Layout'
-import Slider2 from '@/components/slider/Slider2'
-import Image from "next/image"
-import Link from "next/link"
+import TextEffect from "@/components/elements/TextEffect";
+import Layout from "@/components/layout/Layout";
+import Slider2 from "@/components/slider/Slider2";
+import Image from "next/image";
+import Link from "next/link";
 
 const Index2 = () => {
-	return (
-		<>
-			<Layout>
-				<section className="relative -mt-24 pt-24">
+  return (
+    <>
+      <Layout>
+        Index 2
+        {/* <section className="relative -mt-24 pt-24">
 					<div className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0" style={{ "zIndex": "-1" }}></div>
 					<div className="container">
 						<div className="flex flex-wrap items-center -mx-3">
@@ -360,10 +360,10 @@ const Index2 = () => {
 							</div>
 						</div>
 					</div>
-				</section>
-			</Layout>
-		</>
-	)
-}
+				</section> */}
+      </Layout>
+    </>
+  );
+};
 
-export default Index2
+export default Index2;
