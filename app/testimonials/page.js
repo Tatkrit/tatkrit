@@ -629,7 +629,7 @@ const Testimonials = () => {
                   </svg>
                   <div className="leading-relaxed">
                     <span className="text-sm text-blueGray-400">Phone</span>
-                    <p>+91 93137 41795</p>
+                    <p>+91 93137 41795 </p>
                   </div>
                 </div>
                 <div
