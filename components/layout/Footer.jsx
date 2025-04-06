@@ -21,8 +21,8 @@ const Footer = () => {
                   sizes="100vw"
                   style={{ width: "auto", height: "auto" }}
                   className="h-10"
-                  src="/assets/imgs/logos/monst-logo.svg"
-                  alt="Monst"
+                  src="/assets/imgs/logos/tatkrit_logo.svg"
+                  alt="Tatkrit"
                 />
               </Link>
             </div>
@@ -41,8 +41,8 @@ const Footer = () => {
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
                 Contacts
               </p>
-              <p className="lg:text-lg text-blueGray-400">(+01) 234 568</p>
-              <p className="lg:text-lg text-blueGray-400">contact@monst.com</p>
+              <p className="lg:text-lg text-blueGray-400">+91 93137 41795</p>
+              <p className="lg:text-lg text-blueGray-400">tatkritsolutions@gmail.com</p>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:justify-between">
@@ -60,7 +60,7 @@ const Footer = () => {
                   sizes="100vw"
                   style={{ width: "auto", height: "auto" }}
                   src="/assets/imgs/icons/linkedin-blue.svg"
-                  alt="Monst"
+                  alt="Tatkrit"
                 />
               </Link>
               <Link className="inline-block px-2" href="https://facebook.com">
@@ -70,7 +70,7 @@ const Footer = () => {
                   sizes="100vw"
                   style={{ width: "auto", height: "auto" }}
                   src="/assets/imgs/icons/facebook-blue.svg"
-                  alt="Monst"
+                  alt="Tatkrit"
                 />
               </Link>
               <Link className="inline-block px-2" href="https://twitter.com">
@@ -80,7 +80,7 @@ const Footer = () => {
                   sizes="100vw"
                   style={{ width: "auto", height: "auto" }}
                   src="/assets/imgs/icons/twitter-blue.svg"
-                  alt="Monst"
+                  alt="Tatkrit"
                 />
               </Link>
               <Link className="inline-block px-2" href="https://www.instagram.com">
@@ -90,7 +90,7 @@ const Footer = () => {
                   sizes="100vw"
                   style={{ width: "auto", height: "auto" }}
                   src="/assets/imgs/icons/instagram-blue.svg"
-                  alt="Monst"
+                  alt="Tatkrit"
                 />
               </Link>
             </div>

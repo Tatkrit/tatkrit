@@ -20,7 +20,7 @@ const Index2 = () => {
 											Committed to <span className="text-blue-500">People</span> and the future
 										</h2>
 										<div className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-											We are <strong className="text-blue-500">Monst</strong>, a Creative Design{" "}
+											We are <strong className="text-blue-500">"Tatkrit"</strong>, a Creative Design{" "}
 											<div className="typewrite d-inline text-brand">
 												<TextEffect text1="Web Agency" text2="Social Marketing" />
 											</div>
@@ -43,7 +43,7 @@ const Index2 = () => {
 										width="0"
 										height="0"
 										sizes="100vw"
-										style={{ width: "auto", height: "auto" }} className="lg:max-w-lg" src="/assets/imgs/illustrations/eating.svg" alt="Monst" />
+										style={{ width: "auto", height: "auto" }} className="lg:max-w-lg" src="/assets/imgs/illustrations/eating.svg" alt="Tatkrit" />
 								</div>
 							</div>
 						</div>
@@ -261,7 +261,7 @@ const Index2 = () => {
 											width="0"
 											height="0"
 											sizes="100vw"
-											style={{ width: "auto", height: "auto" }} className="h-80" src="/assets/imgs/illustrations/online-shopping.png" alt="Monst" />
+											style={{ width: "auto", height: "auto" }} className="h-80" src="/assets/imgs/illustrations/online-shopping.png" alt="Tatkrit" />
 									</div>
 								</div>
 							</div>
@@ -296,7 +296,7 @@ const Index2 = () => {
 									</svg>
 									<div className="leading-relaxed">
 										<span className="text-sm text-blueGray-400">E-mail</span>
-										<p>contact@monst.com</p>
+										<p>contact@"Tatkrit".com</p>
 										<p>pat@example.com</p>
 									</div>
 								</div>

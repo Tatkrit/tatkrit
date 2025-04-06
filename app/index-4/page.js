@@ -41,7 +41,7 @@ const Index4 = () => {
                     Solution
                   </h2>
                   <div className="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn">
-                    We are <strong className="text-blue-500">Monst</strong>, a Creative Design{" "}
+                    We are <strong className="text-blue-500">"Tatkrit"</strong>, a Creative Design{" "}
                     <div className="typewrite d-inline text-brand">
                       <TextEffect text1="Web Agency" text2="Social Marketing" />
                     </div>
@@ -75,7 +75,7 @@ const Index4 = () => {
                     style={{ width: "auto", height: "auto" }}
                     className="lg:max-w-lg"
                     src="/assets/imgs/illustrations/work-tv.png"
-                    alt="Monst"
+                    alt="Tatkrit"
                   />
                 </div>
               </div>
@@ -405,7 +405,7 @@ const Index4 = () => {
                     style={{ width: "auto", height: "auto" }}
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/eating.svg"
-                    alt="Monst"
+                    alt="Tatkrit"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">Project Initialization</h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
@@ -429,7 +429,7 @@ const Index4 = () => {
                     style={{ width: "auto", height: "auto" }}
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/space.svg"
-                    alt="Monst"
+                    alt="Tatkrit"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">Project planning</h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
@@ -453,7 +453,7 @@ const Index4 = () => {
                     style={{ width: "auto", height: "auto" }}
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/tasks.svg"
-                    alt="Monst"
+                    alt="Tatkrit"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">Project organization</h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
@@ -840,7 +840,7 @@ const Index4 = () => {
                       style={{ width: "auto", height: "auto" }}
                       className="h-80"
                       src="/assets/imgs/illustrations/online-shopping.png"
-                      alt="Monst"
+                      alt="Tatkrit"
                     />
                   </div>
                 </div>
@@ -913,8 +913,7 @@ const Index4 = () => {
                   </svg>
                   <div className="leading-relaxed">
                     <span className="text-sm text-blueGray-400">E-mail</span>
-                    <p>contact@monst.com</p>
-                    <p>pat@example.com</p>
+                    <p>tatkritsolutions@gmail.com</p>
                   </div>
                 </div>
                 <div
