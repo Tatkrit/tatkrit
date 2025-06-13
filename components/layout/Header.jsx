@@ -63,14 +63,14 @@ const Header = ({ handleHidden }) => {
                   Company
                 </Link>
                 <ul className="drop-down-menu min-w-200">
-                  <li>
+                  {/* <li>
                     <Link
                       href="/portfolio"
                       className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
                     >
                       Portfolio
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li>
                     <Link
                       href="/team"
@@ -95,14 +95,14 @@ const Header = ({ handleHidden }) => {
                       Pricing
                     </Link>
                   </li> */}
-                  <li>
+                  {/* <li>
                     <Link
                       href="/faqs"
                       className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
                     >
                       Faqs
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li>
                     <Link
                       href="/404"

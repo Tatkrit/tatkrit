@@ -43,8 +43,16 @@ const About = () => {
                     <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
                       Committed to <span className="text-blue-500">People</span> and the future
                     </h2>
-                    <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
+                    {/* <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
                       We are <strong className="text-blue-500">"Tatkrit"</strong>, a Creative Design{" "}
+                      <span
+                        className="typewrite d-inline text-brand"
+                        data-period="3000"
+                        data-type='["Web Agency", "Social Marketing" ]'
+                      ></span>
+                    </p> */}
+                    <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
+                     <strong className="text-blue-500">"Tatkrit"</strong>, Where Design, Development & Marketing Come Together.{" "}
                       <span
                         className="typewrite d-inline text-brand"
                         data-period="3000"
@@ -88,7 +96,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-blueGray-50" id="how-we-work">
+        {/* <section className="py-20 bg-blueGray-50" id="how-we-work">
           <div className="container">
             <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
               <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
@@ -182,8 +190,8 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section className="pt-6 pb-2">
+        </section> */}
+        {/* <section className="pt-6 pb-2">
           <div className="container">
             <div className="flex flex-wrap justify-between pt-8 pb-16">
               <div
@@ -301,7 +309,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="py-20">
           <div className="container text-center">
             <div className="max-w-lg mx-auto mb-16">
@@ -313,12 +321,66 @@ const About = () => {
                 Entrust Your Project To Our <span className="text-blue-500"> Specialists </span>
               </h2>
               <p className="text-blueGray-400 leading-loose">
-                Our IT services converge business and technology experts to help to manage business
-                categories
+              Our IT services align technology with business goals, helping you efficiently manage and grow across multiple sectors.
               </p>
             </div>
             <div className="flex flex-wrap -mx-5">
-              <div className="w-1/2 lg:w-1/4 px-5 mb-12">
+            <div className="w-1/2 lg:w-1/3 px-5">
+                <div
+                  className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
+                  data-wow-delay=".1s"
+                >
+                  <Image
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    style={{ width: "auto", height: "auto" }}
+                    className="mb-6 h-24 w-24 mx-auto rounded-full object-cover object-top"
+                    src="/assets/imgs/placeholders/avatar-5.png"
+                    alt="Tatkrit"
+                  />
+                  <strong className="mt-6 mb-2 text-md">Akshat Panchal</strong>
+                  <p className="text-gray-500 text-xs mt-3">Director</p>
+                </div>
+              </div>
+              <div className="w-1/2 lg:w-1/3 px-5 mb-12">
+                <div
+                  className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
+                  data-wow-delay=".7s"
+                >
+                  <Image
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    style={{ width: "auto", height: "auto" }}
+                    className="mb-6 h-24 w-24 mx-auto rounded-full object-cover object-top"
+                    src="/assets/imgs/placeholders/avatar-4.png"
+                    alt="Tatkrit"
+                  />
+                  <strong className="mt-6 mb-2 text-md">Manan Upadhyay</strong>
+                  <p className="text-gray-500 text-xs mt-3">Direct-Founder</p>
+                </div>
+              </div>
+              <div className="w-1/2 lg:w-1/3 px-5">
+                <div
+                  className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
+                  data-wow-delay=".3s"
+                >
+                  <Image
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    style={{ width: "auto", height: "auto" }}
+                    className="mb-6 h-24 w-24 mx-auto rounded-full object-cover object-top"
+                    src="/assets/imgs/placeholders/avatar-6.png"
+                    alt="Tatkrit"
+                  />
+                  <strong className="mt-6 mb-2 text-md">Dhruv Panchal</strong>
+                  <p className="text-gray-500 text-xs mt-3">Marketing</p>
+                </div>
+              </div>
+             
+              {/* <div className="w-1/2 lg:w-1/3 px-5 mb-12">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".1s"
@@ -336,7 +398,7 @@ const About = () => {
                   <p className="text-gray-500 text-xs mt-3">CEO, Co Founders</p>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/4 px-5 mb-12">
+              <div className="w-1/2 lg:w-1/3 px-5 mb-12">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".3s"
@@ -354,7 +416,7 @@ const About = () => {
                   <p className="text-gray-500 text-xs mt-3">CEO-Founder</p>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/4 px-5 mb-12">
+              <div className="w-1/2 lg:w-1/3 px-5 mb-12">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".5s"
@@ -372,25 +434,8 @@ const About = () => {
                   <p className="text-gray-500 text-xs mt-3">Project-Manager</p>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/4 px-5 mb-12">
-                <div
-                  className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
-                  data-wow-delay=".7s"
-                >
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    style={{ width: "auto", height: "auto" }}
-                    className="mb-6 h-24 w-24 mx-auto rounded-full object-cover object-top"
-                    src="/assets/imgs/placeholders/avatar-4.png"
-                    alt="Tatkrit"
-                  />
-                  <strong className="mt-6 mb-2 text-md">Dany Connolly</strong>
-                  <p className="text-gray-500 text-xs mt-3">Direct-Founder</p>
-                </div>
-              </div>
-              <div className="w-1/2 lg:w-1/4 px-5">
+             
+              <div className="w-1/2 lg:w-1/3 px-5">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".1s"
@@ -408,7 +453,7 @@ const About = () => {
                   <p className="text-gray-500 text-xs mt-3">Director</p>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/4 px-5">
+              <div className="w-1/2 lg:w-1/3 px-5">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".3s"
@@ -426,7 +471,7 @@ const About = () => {
                   <p className="text-gray-500 text-xs mt-3">Marketing</p>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/4 px-5">
+              <div className="w-1/2 lg:w-1/3 px-5">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".5s"
@@ -444,7 +489,7 @@ const About = () => {
                   <p className="text-gray-500 text-xs mt-3">Designer</p>
                 </div>
               </div>
-              <div className="w-1/2 lg:w-1/4 px-5">
+              <div className="w-1/2 lg:w-1/3 px-5">
                 <div
                   className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
                   data-wow-delay=".7s"
@@ -461,11 +506,11 @@ const About = () => {
                   <strong className="mt-6 mb-2 text-md">Romario</strong>
                   <p className="text-gray-500 text-xs mt-3">Designer</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
-        <section className="pb-20">
+        {/* <section className="pb-20">
           <div className="container">
             <div className="max-w-2xl mx-auto text-center">
               <div className="max-w-md mb-8 mx-auto">
@@ -570,7 +615,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <section className="py-20 bg-blue-500">
           <div className="container">
             <div className="text-center max-w-xl mx-auto">

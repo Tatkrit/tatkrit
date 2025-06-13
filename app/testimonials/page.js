@@ -1,61 +1,179 @@
+'use client'
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+const testimonials = [
+  {
+    id: 1,
+    image: "/assets/imgs/placeholders/img-1.png",
+    quote: "Maecenas nibh purus, pharetra ac felis sed, elementum molestie urna. Nunc at arcu non ipsum auctor lacinia quis quis mi.",
+    name: "Alice Bradley",
+    position: "CEO, Co Founders"
+  },
+  {
+    id: 2,
+    image: "/assets/imgs/placeholders/img-1.png",
+    quote: "Another amazing testimonial about our services and how we helped transform their business.",
+    name: "John Smith",
+    position: "Marketing Director"
+  },
+  {
+    id: 3,
+    image: "/assets/imgs/placeholders/img-1.png",
+    quote: "Working with this team has been an incredible experience. Their dedication and expertise are unmatched.",
+    name: "Sarah Johnson",
+    position: "Product Manager"
+  }
+];
 
 const Testimonials = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const goToPrevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
   return (
     <>
       <Layout>
         <section className="py-20 pb-8 overflow-x-hidden">
           <div className="container">
-            <div className="flex flex-wrap mb-24">
-              <div
-                className="relative w-full lg:w-1/2 h-128 mb-20 lg:mb-0 wow animate__animated animate__fadeIn"
-                data-wow-delay=".1s"
-              >
-                <div className="absolute top-0 right-0 h-full w-full mt-6 -mr-6 bg-blueGray-100 rounded-xl"></div>
-                <Image
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "auto", height: "auto" }}
-                  className="absolute top-0 right-0 h-full w-full rounded-xl object-cover object-top"
-                  src="/assets/imgs/placeholders/img-1.png"
-                  alt="Tatkrit"
-                />
+            <div className="relative">
+              <div className="overflow-hidden">
+                <div
+                  className="flex transition-transform duration-500 ease-in-out"
+                  style={{
+                    transform: `translateX(-${currentSlide * 100}%)`,
+                  }}
+                >
+                  {testimonials.map((testimonial) => (
+                    <div
+                      key={testimonial.id}
+                      className="w-full flex-shrink-0"
+                    >
+                      <div className="flex flex-wrap mb-24">
+                        <div
+                          className="relative w-full lg:w-1/2 h-128 mb-20 lg:mb-0 wow animate__animated animate__fadeIn"
+                          data-wow-delay=".1s"
+                        >
+                          <div className="absolute top-0 right-0 h-full w-full mt-6 -mr-6 bg-blueGray-100 rounded-xl"></div>
+                          <Image
+                            width="0"
+                            height="0"
+                            sizes="100vw"
+                            style={{ width: "auto", height: "auto" }}
+                            className="absolute top-0 right-0 h-full w-full rounded-xl object-cover object-top"
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                          />
+                        </div>
+                        <div className="w-full lg:w-1/2 lg:pl-24 my-auto">
+                          <Image
+                            width="0"
+                            height="0"
+                            sizes="100vw"
+                            style={{ width: "auto", height: "auto" }}
+                            src="/assets/imgs/icons/quote.svg"
+                            alt="Quote"
+                            className="wow animate__animated animate__fadeIn"
+                            data-wow-delay=".2s"
+                          />
+                          <h2
+                            className="my-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
+                            data-wow-delay=".3s"
+                          >
+                            {testimonial.quote}
+                          </h2>
+                          <p className="mb-1 text-lg">
+                            <strong
+                              className="text-blue-500 wow animate__animated animate__fadeIn"
+                              data-wow-delay=".4s"
+                            >
+                              {testimonial.name}
+                            </strong>
+                          </p>
+                          <p
+                            className="text-gray-500 text-xs wow animate__animated animate__fadeIn"
+                            data-wow-delay=".5s"
+                          >
+                            {testimonial.position}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="w-full lg:w-1/2 lg:pl-24 my-auto">
-                <Image
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "auto", height: "auto" }}
-                  src="/assets/imgs/icons/quote.svg"
-                  alt="Tatkrit"
-                  className="wow animate__animated animate__fadeIn"
-                  data-wow-delay=".2s"
-                />
-                <h2
-                  className="my-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
-                  data-wow-delay=".3s"
+
+              {/* Navigation Arrows - Updated Position */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex items-center space-x-4 z-10">
+                <button
+                  onClick={goToPrevSlide}
+                  className="bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
                 >
-                  Maecenas nibh purus, pharetra ac felis sed, elementum molestie urna. Nunc at arcu
-                  non ipsum auctor lacinia quis quis mi.
-                </h2>
-                <p className="mb-1 text-lg">
-                  <strong
-                    className="text-blue-500 wow animate__animated animate__fadeIn"
-                    data-wow-delay=".4s"
+                  <svg
+                    className="w-6 h-6 text-gray-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    Alice Bradley
-                  </strong>
-                </p>
-                <p
-                  className="text-gray-500 text-xs wow animate__animated animate__fadeIn"
-                  data-wow-delay=".5s"
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
+                  </svg>
+                </button>
+                <button
+                  onClick={goToNextSlide}
+                  className="bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
                 >
-                  CEO, Co Founders
-                </p>
+                  <svg
+                    className="w-6 h-6 text-gray-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Pagination Dots */}
+              <div className="flex justify-center mt-8 space-x-2">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-colors ${
+                      currentSlide === index ? 'bg-blue-500' : 'bg-gray-300'
+                    }`}
+                  />
+                ))}
               </div>
             </div>
             <div className="flex flex-wrap items-center justify-center max-w-4xl mx-auto pt-4 pb-4">
@@ -591,7 +709,7 @@ const Testimonials = () => {
             </div>
           </div>
         </section>
-        <section className="pb-20">
+        {/* <section className="pb-20">
           <div className="container">
             <div className="max-w-2xl lg:max-w-3xl mx-auto">
               <div className="mb-12 text-center">
@@ -655,7 +773,7 @@ const Testimonials = () => {
                     <p>tatkritsolutions@gmail.com</p>
                   </div>
                 </div>
-                {/* <div
+                <div
                   className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated"
                   data-wow-delay=".5s"
                 >
@@ -684,7 +802,7 @@ const Testimonials = () => {
                     <p>11567 E Broadview Dr</p>
                     <p>Colorado(CO), 80117</p>
                   </div>
-                </div> */}
+                </div>
               </div>
               <div>
                 <form>
@@ -763,7 +881,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     </>
   );

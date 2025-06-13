@@ -226,7 +226,7 @@ const Home = () => {
                     </div>
                     <h3 className="mb-2 font-bold font-heading">Looking for Creative</h3>
                     <p className="text-sm text-blueGray-400 leading-loose">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Crafting Custom Software Solutions for Your Unique Needs.
                     </p>
                   </div>
                 </div>
@@ -256,6 +256,10 @@ const Home = () => {
                     <p className="text-sm text-blueGray-400 leading-loose">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
+                    {/* <h3 className="mb-2 font-bold font-heading">Scalable Architecture</h3>
+                    <p className="text-sm text-blueGray-400 leading-loose">
+                    Solutions designed to grow with your business, ensuring scalability and seamless integration with future technology.
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -298,8 +302,7 @@ const Home = () => {
                     <div>
                       <h3 className="mb-2 text-xl font-semibold font-heading">Expand Your Reach</h3>
                       <p className="text-blueGray-400 leading-loose">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita
-                        animi.
+                      Expand your reach by leveraging innovative solutions that connect you with a broader audience.
                       </p>
                     </div>
                   </div>
@@ -324,11 +327,16 @@ const Home = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="mb-2 text-xl font-semibold font-heading">Annualized Growth</h3>
+                      {/* <h3 className="mb-2 text-xl font-semibold font-heading">Annualized Growth</h3>
                       <p className="text-blueGray-400 leading-loose">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita
                         animi.
+                      </p> */}
+                      <h3 className="mb-2 text-xl font-semibold font-heading">Custom Software Solutions</h3>
+                      <p className="text-blueGray-400 leading-loose">
+                      Tailored applications designed to meet the specific needs of your business, from concept to deployment.
                       </p>
+                      
                     </div>
                   </div>
                   <div
@@ -353,11 +361,10 @@ const Home = () => {
                     </div>
                     <div>
                       <h3 className="mb-2 text-xl font-semibold font-heading">
-                        Book Your Providers
+                      Fast Turnaround Time
                       </h3>
                       <p className="text-blueGray-400 leading-loose">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita
-                        animi.
+                      Efficient development processes that minimize time to market without compromising on quality.
                       </p>
                     </div>
                   </div>
@@ -383,9 +390,7 @@ const Home = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et
-                  iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed
-                  elementum vitae ligula id imperdiet.
+                We are a skilled team committed to transforming your business vision into reality with cutting-edge software solutions. Our expertise and dedication help you create a digital future that drives success.
                 </p>
               </div>
             </div>
@@ -484,7 +489,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              {/* <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".3s"
@@ -511,8 +516,8 @@ const Home = () => {
                     positive customer experience are the heart of success.
                   </p>
                 </div>
-              </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              </div> */}
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".5s"
@@ -535,12 +540,11 @@ const Home = () => {
                   </div>
                   <h3 className="mb-2 font-bold font-heading">Web Development</h3>
                   <p className="text-sm text-blueGray-400">
-                    We believe brand interaction is key to communication. Real innovations and
-                    positive customer experience are the heart of success.
+                  We believe intuitive design is key to impactful web development. Innovation and exceptional user engagement drive the success of every website.
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".7s"
@@ -563,12 +567,11 @@ const Home = () => {
                   </div>
                   <h3 className="mb-2 font-bold font-heading">App Development</h3>
                   <p className="text-sm text-blueGray-400">
-                    We believe brand interaction is key to communication. Real innovations and
-                    positive customer experience are the heart of success.
+                  We believe user-centric design is key to successful app development. Innovation and seamless functionality ensure exceptional user experiences.
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-8">
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-8">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".9s"
@@ -597,12 +600,11 @@ const Home = () => {
                   </div>
                   <h3 className="mb-2 font-bold font-heading">Digital Marketing</h3>
                   <p className="text-sm text-blueGray-400">
-                    We believe brand interaction is key to communication. Real innovations and
-                    positive customer experience are the heart of success.
+                  We believe strategic engagement is key to effective digital marketing. Innovation and meaningful connections drive impactful brand growth.
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".3s"
@@ -625,12 +627,11 @@ const Home = () => {
                   </div>
                   <h3 className="mb-2 font-bold font-heading">Right Solutions</h3>
                   <p className="text-sm text-blueGray-400">
-                    We believe brand interaction is key to communication. Real innovations and
-                    positive customer experience are the heart of success.
+                  We believe tailored solutions are key to achieving success. Innovation and precision drive impactful and lasting results.
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              {/* <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".5s"
@@ -657,8 +658,8 @@ const Home = () => {
                     positive customer experience are the heart of success.
                   </p>
                 </div>
-              </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              </div> */}
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".7s"
@@ -681,12 +682,11 @@ const Home = () => {
                   </div>
                   <h3 className="mb-2 font-bold font-heading">Clean Design</h3>
                   <p className="text-sm text-blueGray-400">
-                    We believe brand interaction is key to communication. Real innovations and
-                    positive customer experience are the heart of success.
+                  We believe simplicity is key to clean design. Innovation and clarity create impactful and visually appealing experiences.
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeIn"
                   data-wow-delay=".9s"
@@ -709,8 +709,7 @@ const Home = () => {
                   </div>
                   <h3 className="mb-2 font-bold font-heading">Process Research</h3>
                   <p className="text-sm text-blueGray-400">
-                    We believe brand interaction is key to communication. Real innovations and
-                    positive customer experience are the heart of success.
+                  Understanding is key to effective process research. Innovation and detailed analysis lead to informed and successful strategies.
                   </p>
                 </div>
               </div>

@@ -35,13 +35,13 @@ const Footer = () => {
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
                 Office
               </p>
-              <p className="lg:text-lg text-blueGray-400">359 Hidden Valley Road, NY</p>
+              <p className="lg:text-lg text-blueGray-400">First floor, 6 Mahasweta kadambari, near Nehrunagar circle, Ahmedabad - 380006</p>
             </div>
             <div className="w-full lg:w-1/5 px-3">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
                 Contacts
               </p>
-              <p className="lg:text-lg text-blueGray-400">+91 93137 41795</p>
+              <p className="lg:text-lg text-blueGray-400">+91 91066 17318</p>
               <p className="lg:text-lg text-blueGray-400">tatkritsolutions@gmail.com</p>
             </div>
           </div>
